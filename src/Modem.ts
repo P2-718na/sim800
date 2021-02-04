@@ -169,7 +169,7 @@ export class Modem implements IModem {
                 let timer = setTimeout(() => {
                     let error: ModemTimeout = { event: 'timeout' };
                     item.errorCallback(error);
-                }, item.atCommand.timeout || 1000);
+                }, 5000);//item.atCommand.timeout || 1000);
             });
         }
     }
