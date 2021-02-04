@@ -2,10 +2,10 @@ var GenericGsmClient = require('../dist/GsmClient').GenericGsmClient;
 var Modem = require('../dist/Modem').Modem;
 var SerialPort = require('serialport');
 
-var SERIAL_PORT = 'COM13';
+var SERIAL_PORT = '/dev/modem0';
 var SERIAL_OPEN_OPTIONS = {
     autoOpen: false,
-    baudRate: 9600,
+    baudRate: 115200,
     dataBits: 8,
     parity: 'none',
     stopBits: 1

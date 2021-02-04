@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "NodeJS library to interact with the SIM800L module",
   "main": "dist/index.js",
-  "types" : "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "node dist/index.js",
     "dev": "tsc --watch & nodemon dist",
@@ -30,8 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/serialport": "^6.0.1",
-    "nodemon": "^1.17.5",
-    "typescript": "^2.8.4"
+    "nodemon": "^1.17.5"
   },
   "dependencies": {
     "serialport": "^6.2.0"
