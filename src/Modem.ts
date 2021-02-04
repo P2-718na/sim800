@@ -163,6 +163,7 @@ export class Modem implements IModem {
             let cmd: string = item.atCommand.command;
             // console.log(cmd); // TODO: delete this line
             this.serialPort.write(cmd + this.SEND_CHAR, 'ascii', (err: any, bytesWritten: number) => {
+                console.log(bytesWritten);
                 if (err) {
                     return item.errorCallback(err);
                 }
